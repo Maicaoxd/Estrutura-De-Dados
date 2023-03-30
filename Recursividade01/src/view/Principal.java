@@ -30,7 +30,7 @@ public class Principal {
 			break;
 		case 4:
 			Exercicio04 ex4 = new Exercicio04();
-			String palavra = "edcba";
+			String palavra = "teste";
 			int tamanho1 = palavra.length();
 			String inv = ex4.Inversao(palavra, tamanho1);
 			System.out.println(inv);
