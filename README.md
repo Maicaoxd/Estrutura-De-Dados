@@ -208,3 +208,7 @@ da direita
 -Recursivamente, a função usada com vetor inicial, deve ser chamada novamente (sem retorno), para ordenar o sub vetor da esquerda e, sequencialmente, o da direita.
 - Essa recursividade deve seguir até que o subvetor fique com 1 única posição, condição de parada da recursividade.
 -Neste ponto, o vetor estará ordenado
+
+## [ExercicioPilha1](https://github.com/Maicaoxd/Estrutura-De-Dados/tree/main/AlgoritmosOrdenacao/src/br/edu/fateczl/ordenacao)
+
+### [PDF](https://leandrocolevati.com.br/downloadmateriais?idFile=1F-sHe4u0eYJK8kl7xLWQY5bprglPfYv-&arquivo=03-AlgoritmosOrdenacao.pdf)
