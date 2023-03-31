@@ -209,6 +209,188 @@ da direita
 - Essa recursividade deve seguir até que o subvetor fique com 1 única posição, condição de parada da recursividade.
 -Neste ponto, o vetor estará ordenado
 
-## [ExercicioPilha1](https://github.com/Maicaoxd/Estrutura-De-Dados/tree/main/AlgoritmosOrdenacao/src/br/edu/fateczl/ordenacao)
+## [ExercicioPilha1](https://github.com/Maicaoxd/Estrutura-De-Dados/tree/main/ExercicioPilha1)
 
-### [PDF](https://leandrocolevati.com.br/downloadmateriais?idFile=1F-sHe4u0eYJK8kl7xLWQY5bprglPfYv-&arquivo=03-AlgoritmosOrdenacao.pdf)
+### [PDF](https://leandrocolevati.com.br/downloadmateriais?idFile=14DiL64nYCp3fmOKjFqlAmNO2hn2gPL0a&arquivo=ExerciciosAulaPilhasDinamicas.pdf)
+
+### [Exercício 1](https://github.com/Maicaoxd/Estrutura-De-Dados/blob/main/ExercicioPilha1/src/view/Exercicio01.java)
+
+Fazer um teste de mesa do algoritmo abaixo, deixando explícito os valores de saída em console e a estrutura da pilha
+
+    Pilha p = new Pilha();
+    int[] vetor = {100, 200, 1, 50, 39, 44, 25, 16, 99, 45, 33, 18, 102, 92};
+    int tamanhoVetor = vetor.length;
+    Para (i = 0 ; i < tamanhoVetor ; i++) {
+        Se (pilhaVazia() == verdadeiro) {
+            p.push(vetor[i] - 10);
+        } Senao Se (vetor[i] mod 5 == 0) {
+            p.push(vetor[i] / 5);
+        } Senao Se (vetor[i] mod 3 == 0) {
+            p.push(vetor[i] * 3);
+        } Senao {
+            int v1 = p.pop();
+            escreva (v1 / 2);
+        }
+    }
+
+### [Exercício 3](https://github.com/Maicaoxd/Estrutura-De-Dados/blob/main/ExercicioPilha1/src/view/Exercicio03.java)
+
+Baseado na lógica do Exercício 2, criar uma aplicação Java, baseada na biblioteca de pilha de int, que faça:
+1) Criar uma classe view (Principal.java) que, na main:
+    - a. Peça ao usuário um valor inteiro de 0 a 10 (Caso o usuário digite um valor fora desses limites, pedir novamente, até que o valor atenda à solicitação);
+2) Criar uma classe controller chamada FatController, que tenha um método fatorial(int valor): int e faça:
+    - a. Inicialize uma pilha
+    - b. Usando a pilha como suporte, calcule o fatorial do valor de entrada 
+    - c. O método deve retornar esse valor 
+3) O método main da classe Principal.java deve chamar o método fatorial(int valor): long e exibir em console o valor do fatorial.
+
+O método fatorial(int valor): long deve estar baseado nas operações da pilha de inteiros (push(), pop(), size(), top(), isEmpty())
+
+## [ExercicioPilha2](https://github.com/Maicaoxd/Estrutura-De-Dados/tree/main/ExercicioPilha2)
+
+### [PDF](https://leandrocolevati.com.br/downloadmateriais?idFile=1EzVw7a07L1lyTCv0iRfoRdaH6-1aWk0P&arquivo=04-PilhasDinamicas.pdf)
+
+### [Exercício 1. a](https://github.com/Maicaoxd/Estrutura-De-Dados/blob/main/ExercicioPilha2/src/view/Exercicio0101.java)
+
+Simular o comportamento de pilhas dinâmicas para os algoritmos abaixo ( A simulação deve deixar evidente a pilha que sobrou na memória):
+
+a)
+    
+    Para (i = 0 ; i < 10 ; i++) {
+        Se (i % 2 == 0) {
+            Push(i * i);
+        } Senão {
+            Se (i <= 5) {
+                Push(i);
+            } Senão {
+                Pop();
+            }
+        }
+        Top();
+    }
+    Size();
+
+### [Exercício 1. b](https://github.com/Maicaoxd/Estrutura-De-Dados/blob/main/ExercicioPilha2/src/view/Exercicio0102.java)
+
+Simular o comportamento de pilhas dinâmicas para os algoritmos abaixo ( A simulação deve deixar evidente a pilha que sobrou na memória):
+
+b)
+
+    Para (i = 100 ; i < 115 ; i++) {
+        Se (isEmpty()) {
+            Push(i + 100);
+        } Senão {
+            Se (Size() <= 4) {
+                Push(i + 50);
+            } Senão {
+                Pop();
+            }
+        }
+        Top();
+    }
+    Size();
+
+### [Exercício 3](https://github.com/Maicaoxd/Estrutura-De-Dados/blob/main/ExercicioPilha2/src/view/Exercicio03.java)
+
+Implementar um novo projeto Java com base biblioteca PilhaInt que permita a conversão de decimais para binários, a qual se dá dividindo, sucessivamente, o valor de entrada por 2 e concatenando os restos da divisão do último para o primeiro.
+
+O projeto deve ter uma classe ConverteController no package controller, que inicialize uma pilha de inteiros e com um método decToBin(int decimal): String, que, recebendo um número decimal e realizando as operações, irá inserindo os restos das divisões na pilha. Ao término do empilhamento, deverá ser feita a operação de desempilhar, concatenando cada número desempilhado (Convertendo para String) com o próximo, até a pilha esvaziar.
+
+Deve-se ter também uma classe Principal no package view que permita ao usuário inserir um número decimal limitado a 1000.
+
+## [ExercicioPilha3](https://github.com/Maicaoxd/Estrutura-De-Dados/tree/main/ExercicioPilha3)
+
+### [PDF](https://leandrocolevati.com.br/downloadmateriais?idFile=1FBbk5qjFDMhNx0cOkeLIcQbOBDEtOdrz&arquivo=05-ExerciciosPilhasDinamicas.pdf)
+
+### [Exercício 2](https://github.com/Maicaoxd/Estrutura-De-Dados/blob/main/ExercicioPilha3/src/view/Exercicio02.java)
+
+Considere o vetor a seguir:
+    
+    0 5 7 -4 3 5 -2 -1 10 4 3 -6 2 -9 1 -5
+Fazer um algoritmo, em Java, utilizando a biblioteca PilhaInt, inicializar uma pilha de inteiros e resolva conforme as condições:
+- O vetor deve ser percorrido do primeiro ao último elemento
+- Caso seja um número positivo ou 0, fazer o push do valor
+- Caso seja um número negativo, fazer o pop de 2 valores, somá-los, fazer o push  do número negativo e o push do resultado da soma 
+- Ao término do vetor, apresentar a quantidade de valores presentes na pilha
+
+### [Exercício 3](https://github.com/Maicaoxd/Estrutura-De-Dados/blob/main/ExercicioPilha3/src/view/Exercicio03.java)
+
+Considere a pilha abaixo, já formada. 
+
+    J
+    G
+    R
+    B
+    H
+    L
+    W
+Demonstrando em código ou teste de mesa, criar uma sequência de operações de pilha que dê a seguinte saída:
+
+Console:
+    
+    R W
+Pilha Final:
+    
+    K
+    G
+    M
+    B
+    L
+
+### [Exercício 4](https://github.com/Maicaoxd/Estrutura-De-Dados/blob/main/ExercicioPilha3/src/view/Exercicio04.java)
+
+Implementar um novo projeto Java com a biblioteca PilhaInt.
+
+Esse projeto deve implementar uma solução para uma calculadora em Notação  Polonesa Reversa (NPR), também conhecida como posfixa. Calculadoras HP, como a 48G ou a 12C utilizam esse formato de cálculo, em detrimento da maneira algébrica (infixa).
+
+A lógica da NPR se dá como a seguir:
+
+- Notação Polonesa Reversa: 
+- (O vídeo [https://www.youtube.com/watch?v=-b-f9-9_xAI](https://www.youtube.com/watch?v=-b-f9-9_xAI) mostra a HP 50G em operações infixa e posfixa)
+    - Enquanto for digitado número, ele será empilhado.
+    - Quando for digitada uma operação (+,-,*,/), 2 valores devem ser desempilhados, se faz a operação com eles e o resultado retorna à pilha
+    - É importante verificar que a pilha deve ter, no mínimo 2 valores para fazer a operação
+
+O projeto deve ter uma classe de controle (NPRController) que inicializa uma nova Pilha e deve ter duas operações:
+- Operação insereValor(Pilha p, int valor):void, faz um push() na pilha
+- Operação npr(Pilha p, String op):int. O método deve verificar se a String se trata de uma operação (+,-,*,/), verifica se é possível fazer 2 pop() e, em sendo possível, fazer os 2 pop(), fazer a operação, gravar em uma variável resultado (que é o retorno da operação) e fazer o push() do resultado.
+    - Para operações de subtração e divisão (que a ordem importa), fazer o valor do 2º pop() operação valor do 1º pop(), ou seja o valor mais antigo à esquerda da operação
+    - Se não houverem 2 valores, deve-se lançar um Exception de pilha com valores insuficientes
+
+A classe view Principal, deve inicializar a pilha e solicitar dados (número ou operação) ao usuário até alguma condição de encerramento, definido por você.
+
+### [Exercício 5](https://github.com/Maicaoxd/Estrutura-De-Dados/blob/main/ExercicioPilha3/src/view/Exercicio05.java)
+
+Considerando a biblioteca PilhaString, já criada, faça:
+
+Criar um projeto Java (Palindromos) e importe a biblioteca PilhaStrings. Esse novo projeto irá receber uma cadeia de Strings do usuário e demonstrar para ele se essa palavra se trata ou não de um Palíndromo.
+
+Palíndromo é uma cadeia de caracteres que se lê da direita para a esquerda e da esquerda para a direita e a sequência de caracteres é a mesma, como em arara, ovo, subinoonibus, por exemplo.
+
+A classe PalindromoController no package controller deve ter 2 métodos:
+- O método invertePalavra que recebe um String e retorna o String invertido. Os 
+métodos push(), pop(), isEmpty() devem ser usados para esse fim;
+- O método comparaPalavras, que recebe o String, o String já invertido e retorna 
+um boolean (True para Palíndromo e False para Não Palíndromo)
+
+A classe Principal, no package view, no seu método Main, deve inicializar uma pilha e exibir a possibilidade de o usuário inserir uma cadeia de Strings e retornar a ele se é ou não um palíndromo. Todos os métodos devem receber a pilha criada no método Main como parâmetro.
+
+Dica: Para inverter, pode-se usar os métodos substring ou charAt
+
+### [Exercício 6](https://github.com/Maicaoxd/Estrutura-De-Dados/blob/main/ExercicioPilha3/src/view/Exercicio06.java)
+
+Considerando a biblioteca PilhaString, já criada, faça:
+
+Criar um projeto Java (HistoricoSim) e importe a biblioteca PilhaStrings. Esse novo projeto simulará uma função presente nos navegadores Web, a função de histórico.
+
+A função de histórico empilha os endereços de sites acessados.
+
+A classe Principal, no package view, deve ter na Main, a criação de uma Pilha denominada histórico e deve dar ao usuário a possibilidade de inserir um novo endereço no histórico, remover o último endereço da pilha, saber qual foi o último endereço visitado. Um menu deve ser criado.
+
+A classe HistoricoController deve ter os métodos de validação das operações oferecidas na Main da Classe Principal. Todos os métodos devem receber a pilha criada no método Main como parâmetro.
+- O método de inserir um novo endereço, deve-se verificar antes, se o endereço é válido, um endereço válido começa com http:// e, na sequência, deve ter algo no formato www.endereço.com (podendo ser, .com, .co.uk, .com.br, etc.). Não 
+serão aceitos sites sem www;
+- O método de remover o último endereço deve dar um erro se o histórico estiver 
+vazio ou desempilhar o último endereço;
+- O método de consultar o último endereço, deve dar um erro se o histórico estiver 
+vazio ou apresentar o último endereço, sem removê-lo.
