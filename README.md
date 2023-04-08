@@ -394,3 +394,9 @@ serão aceitos sites sem www;
 vazio ou desempilhar o último endereço;
 - O método de consultar o último endereço, deve dar um erro se o histórico estiver 
 vazio ou apresentar o último endereço, sem removê-lo.
+
+## [AlgoritmosFila](https://github.com/Maicaoxd/Estrutura-De-Dados/tree/main/ExercicioPilha3)
+
+### [PDF](http://www.leandrocolevati.com.br/downloadmateriais?idFile=1FEDAE4tyO14cmilJrcTIr2IMuXl0NaDO&arquivo=06-FilasDinamicas.pdf)
+
+### [Exercício 2](https://github.com/Maicaoxd/Estrutura-De-Dados/blob/main/ExercicioPilha3/src/view/Exercicio02.java)
