@@ -397,6 +397,8 @@ vazio ou apresentar o último endereço, sem removê-lo.
 
 ## [AlgoritmosFila](https://github.com/Maicaoxd/Estrutura-De-Dados/tree/main/AlgoritmosFila)
 
+## [ExercícioFila1](https://github.com/Maicaoxd/Estrutura-De-Dados/tree/main/ExercicioFila1)
+
 ### [PDF](http://www.leandrocolevati.com.br/downloadmateriais?idFile=1FEDAE4tyO14cmilJrcTIr2IMuXl0NaDO&arquivo=06-FilasDinamicas.pdf)
 
 ### [Exercício 2](https://github.com/Maicaoxd/Estrutura-De-Dados/tree/main/AlgoritmosFila/src/br/edu/fateczl/fila)
@@ -407,7 +409,7 @@ b) Adaptar o modelo de Fila Dinâmica desenvolvido em aula, com os métodos espe
 
 c) Adaptar o modelo de Fila Dinâmica desenvolvido em aula, com os métodos esperados, para uma Fila de objetos. Transformar o projeto em uma biblioteca, gerando o JAR FilaObject.
 
-### [Exercício 4]()
+### [Exercício 4](https://github.com/Maicaoxd/Estrutura-De-Dados/tree/main/ExercicioFila1/src)
 
 Considerando a biblioteca FilaObject, já criada, faça:
 
@@ -424,4 +426,3 @@ A classe FilaController deve ter os métodos de validação das operações ofer
         • Se não houver prioritários, já se deve chamar dos não prioritários
         • Se não houver ninguém nas 2 filas, deve-se gerar um aviso
 
-        
